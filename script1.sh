@@ -14,8 +14,8 @@ else
   cat > /etc/puppet/puppet.conf <<-MARK
     [main]
     ssldir = /var/lib/puppet/ssl
-    certname = $HOSTNAME.home
-    server = control.home
+    certname = $HOSTNAME
+    server = control
     environment = production
     [master]
     vardir = /var/lib/puppet
